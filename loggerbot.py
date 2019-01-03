@@ -27,6 +27,8 @@ async def on_ready():
         print("Created log folder: "+logFolder)
 @client.event
 async def on_message(message):
+    if (message.author.bot):
+        return False
     try:
         i=0;msgContained=False;Status="[Not Logged] ";Nickname="";
         while i<len(avoidMsg):
