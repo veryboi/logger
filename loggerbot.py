@@ -3,6 +3,7 @@ import discord, asyncio, aiofiles
 from os.path import isdir,join
 from os import makedirs
 from re import sub
+import os
 logFolder = "Userlogs" #Folder with log files.
 fileExt = ".txt" #The extension of the userlogs, if changed after logs are created multiple files will be created.
 avoidMsg = ["Image made with","Loading...","t!"] #Avoids messages containing one of these substrings.
