@@ -61,5 +61,14 @@ async def on_message(message):
         async for log in client.logs_from(message.channel, limit=100):
             if log.author == message.author:
                 counter += 1
+async def list_servers():
+    await client.wait_until_ready()
+    while not client.is_closed:
+        print("Current servers:")
+        for server in client.servers:
+            print(server.name)
+            print(server.id)
+        await asyncio.sleep(600)
 
+client.loop.create_task(list_servers())
 client.run(tokenKey)
