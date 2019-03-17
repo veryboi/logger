@@ -68,6 +68,7 @@ async def on_message(message):
                 await client.add_reaction(message, ':juan:556959325256548362')
             elif int(message.author.id) == 480075856681893898:
                 await client.add_reaction(message, ':justice:556668050007654409')
+                await client.add_reaction(message, ':hotmna:556668417516765234')
             elif int(message.author.id) == 198671632095510529:
                 await client.add_reaction(message, ':orz:545130316067635200')
             elif int(message.author.id) == 539585349374967809:
@@ -78,7 +79,10 @@ async def on_message(message):
                 await client.add_reaction(message, '🆒')
             elif int(message.author.id) == 438142672893640707:
                 await client.add_reaction(message, '👺')
-
+            elif int(message.author.id) == 462680028514222080:
+                await client.add_reaction(message, ":mfarler:556959140430348288")
+            elif int(message.author.id) == 305508187027668993:
+                await client.add_reaction(message, ":bleu:533067907735748618")
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
             if int(message.channel.id) == 556912837646352395:
