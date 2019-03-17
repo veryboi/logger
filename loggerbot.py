@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 import discord, asyncio, aiofiles
 from os.path import isdir,join
 from os import makedirs
