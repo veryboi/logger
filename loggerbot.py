@@ -72,6 +72,9 @@ async def on_message(message):
                 await client.add_reaction(message, '🏳️‍🌈')
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
+            if int(message.channel.id) == 556912837646352395:
+                await client.send_message(client.get_channel('532704877550239746'),
+                                          str(message.content))
     except Exception as e:
         print("Exception: " + str(e))
 
