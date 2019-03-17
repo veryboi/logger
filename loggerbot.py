@@ -9,7 +9,7 @@ fileExt = ".txt" #The extension of the userlogs, if changed after logs are creat
 avoidMsg = ["Image made with","Loading...","t!"] #Avoids messages containing one of these substrings.
 cmdPrefix = '$' #The prefix to the commands.
 muteChar = '£' #Place this char infront of message to not store message.
-tokenKey = str(os.getenv('token')) #<< Not actual token, just an example.
+tokenKey = str(os.getenv('token'))
 seperationChar = '\n' #The charactor that seperates new messages. Blank for none.
 
 client = discord.Client()
