@@ -1,3 +1,6 @@
 asyncio
-discord
+discord.py
+aiohttp==1.0.5
+asn1crypto==0.24.0
+async-timeout==3.0.1
 aiofiles
