@@ -10,7 +10,7 @@ logFolder = "Userlogs"  # Folder with log files.
 fileExt = ".txt"  # The extension of the userlogs, if changed after logs are created multiple files will be created.
 avoidMsg = ["Image made with", "Loading...", "t!"]  # Avoids messages containing one of these substrings.
 cmdPrefix = '$'  # The prefix to the commands.
-muteChar = '£'  # Place this char infront of message to not store message.
+muteChar = 'x'  # Place this char infront of message to not store message.
 tokenKey = str(os.getenv('token'))
 seperationChar = '\n'  # The charactor that seperates new messages. Blank for none.
 
