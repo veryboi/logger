@@ -66,6 +66,10 @@ async def on_message(message):
                 await client.add_reaction(message, ':joh:555844681196634114')
             elif int(message.author.id) == 480075856681893898:
                 await client.add_reaction(message, ':justice:556668050007654409')
+            elif int(message.author.id) == 198671632095510529:
+                await client.add_reaction(message, ':orz:545130316067635200')
+            elif int(message.author.id) == 539585349374967809:
+                await client.add_reaction(message, '🏳️‍🌈')
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
     except Exception as e:
