@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import discord
 import asyncio
 import aiofiles
@@ -10,7 +11,7 @@ logFolder = "Userlogs"  # Folder with log files.
 fileExt = ".txt"  # The extension of the userlogs, if changed after logs are created multiple files will be created.
 avoidMsg = ["Image made with", "Loading...", "t!"]  # Avoids messages containing one of these substrings.
 cmdPrefix = '$'  # The prefix to the commands.
-muteChar = 'x'  # Place this char infront of message to not store message.
+muteChar = '£'  # Place this char infront of message to not store message.
 tokenKey = str(os.getenv('token'))
 seperationChar = '\n'  # The charactor that seperates new messages. Blank for none.
 
@@ -59,6 +60,12 @@ async def on_message(message):
             if not (message.author.name == message.author.display_name):
                 Nickname = "({0})".format(str(message.author.display_name))
             print('{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
+            if int(message.author.id) == 269881662836441088:
+                await client.add_reaction(message, '⭐')
+            elif int(message.author.id) == 305496297727721472:
+                await client.add_reaction(message, ':joh:555844681196634114')
+            elif int(message.author.id) == 480075856681893898:
+                await client.add_reaction(message, ':justice:556668050007654409')
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
     except Exception as e:
