@@ -76,6 +76,8 @@ async def on_message(message):
                 await client.add_reaction(message, ':izzy:556668288998965248')
             elif int(message.author.id) == 489268166334218263:
                 await client.add_reaction(message, '🆒')
+            elif int(message.author.id) == 438142672893640707:
+                await client.add_reaction(message, '👺')
 
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
