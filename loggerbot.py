@@ -62,10 +62,10 @@ async def on_message(message):
             print('{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
             if int(message.author.id) == 269881662836441088:
                 await client.add_reaction(message, '⭐')
-            elif int(message.author.id) == 305496297727721472:
-                await client.add_reaction(message, ':joh:555844681196634114')
-                await client.add_reaction(message, ':thot:556959362107703329')
-                await client.add_reaction(message, ':juan:556959325256548362')
+            #elif int(message.author.id) == 305496297727721472:
+                #await client.add_reaction(message, ':joh:555844681196634114')
+                #await client.add_reaction(message, ':thot:556959362107703329')
+                #await client.add_reaction(message, ':juan:556959325256548362')
             elif int(message.author.id) == 480075856681893898:
                 await client.add_reaction(message, ':justice:556668050007654409')
                 await client.add_reaction(message, ':hotmna:556668417516765234')
