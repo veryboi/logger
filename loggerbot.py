@@ -60,29 +60,29 @@ async def on_message(message):
             if not (message.author.name == message.author.display_name):
                 Nickname = "({0})".format(str(message.author.display_name))
             print('{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
-            if int(message.author.id) == 269881662836441088:
-                await client.add_reaction(message, '⭐')
-            #elif int(message.author.id) == 305496297727721472:
-                #await client.add_reaction(message, ':joh:555844681196634114')
-                #await client.add_reaction(message, ':thot:556959362107703329')
-                #await client.add_reaction(message, ':juan:556959325256548362')
-            elif int(message.author.id) == 480075856681893898:
-                await client.add_reaction(message, ':justice:556668050007654409')
-                await client.add_reaction(message, ':hotmna:556668417516765234')
-            elif int(message.author.id) == 198671632095510529:
-                await client.add_reaction(message, ':orz:545130316067635200')
-            elif int(message.author.id) == 539585349374967809:
-                await client.add_reaction(message, '🏳️‍🌈')
-            elif int(message.author.id) == 305517731229204481:
-                await client.add_reaction(message, ':izzy:556668288998965248')
-            elif int(message.author.id) == 489268166334218263:
-                await client.add_reaction(message, '🆒')
-            elif int(message.author.id) == 438142672893640707:
-                await client.add_reaction(message, '👺')
-            elif int(message.author.id) == 462680028514222080:
-                await client.add_reaction(message, ":mfarler:556959140430348288")
-            elif int(message.author.id) == 305508187027668993:
-                await client.add_reaction(message, ":bleu:533067907735748618")
+#             if int(message.author.id) == 269881662836441088:
+#                 await client.add_reaction(message, '⭐')
+#             #elif int(message.author.id) == 305496297727721472:
+#                 #await client.add_reaction(message, ':joh:555844681196634114')
+#                 #await client.add_reaction(message, ':thot:556959362107703329')
+#                 #await client.add_reaction(message, ':juan:556959325256548362')
+#             elif int(message.author.id) == 480075856681893898:
+#                 await client.add_reaction(message, ':justice:556668050007654409')
+#                 await client.add_reaction(message, ':hotmna:556668417516765234')
+#             elif int(message.author.id) == 198671632095510529:
+#                 await client.add_reaction(message, ':orz:545130316067635200')
+#             elif int(message.author.id) == 539585349374967809:
+#                 await client.add_reaction(message, '🏳️‍🌈')
+#             elif int(message.author.id) == 305517731229204481:
+#                 await client.add_reaction(message, ':izzy:556668288998965248')
+#             elif int(message.author.id) == 489268166334218263:
+#                 await client.add_reaction(message, '🆒')
+#             elif int(message.author.id) == 438142672893640707:
+#                 await client.add_reaction(message, '👺')
+#             elif int(message.author.id) == 462680028514222080:
+#                 await client.add_reaction(message, ":mfarler:556959140430348288")
+#             elif int(message.author.id) == 305508187027668993:
+#                 await client.add_reaction(message, ":bleu:533067907735748618")
             await client.send_message(client.get_channel('530221804069978114'),
                                       '{1}{2} {3}said: {0}'.format(MsgText, str(message.author.name), Nickname, Status))
             if int(message.channel.id) == 556912837646352395:
